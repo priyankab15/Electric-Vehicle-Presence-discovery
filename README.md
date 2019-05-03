@@ -1,40 +1,24 @@
 # Electric Vehicle Presence Discovery
 
 
-The purpose of this project is to identify if a household has an electric vehicle or not. This information will help energy companies identify the needs of the consumers.  
+The purpose of this project is to identify if a household has an electric vehicle or not.
+This information will help energy companies identify the needs of the consumers.  
  
-The abstract reviews the overall objectives. There is also a slide deck that discusses the final results and evaluation. 
+The objective of this study would be to recognize which residential homes own electric vehicles.
+This information would provide more insights into the needs of energy in homes. Electric Vehicles require much energy to charge. 
+Being able to predict where electric vehicles are can lead to energy companies have a better estimate of how much energy certain homes need. 
+This can also lead to energy companies being able to provide better energy saving/money saving tips for their consumers.
 
-All of the data is located in the data folder. There are many scripts. Below is the proper order and description of each script. 
-
-1. Electricity Pre-Processing
-
-    This script loads the dataids of all homes in thhe pecan street program that were invovled in the program during the full duration of 2016-2018. It includes their total energy use for that time. This script groups the homes so that instead of an observation per hour per home, it is one observation per home. This scirpt is for general purposes of viewing and processing this data to make it easier to work with. 
-    
-2. Merge data andd preprocessing
-
-    This script loads the metadata. This is similar to a data dictionary. It has the unique identify for each home which is how it merges with the electricity information. It also includes general infornmation about the home such as year built, if it has electric vehicles, if it has solar panels, the location and total square footage. 
-    
-3. Explore
-
-    This script is for exploratory data analysis. 
-    
-4. Model building oversampling pre train test split
-
-     This script is used to run models where oversampling technique had been used prior to the train test split. Here oversampling was viewed more as a preprocessing step than as a modeling tool. 
-     
- 5. Model Building oversampling post train test split
+The main research question that this project will work to answer is Which residential homes have Electric Vehicles  
  
-    This script reurns the models but does not do any oversampling until after train test split and then only the train data. This allows for a view of how the model will run on the raw original data instead of processed data. 
-    
- 6. Undersampling
- 
-     This script reruns the modesl but with undersampling instead of oversampling. This allows for an understanding of how oversampling can bias  a dataset. 
-     
- 7. dailydata
- 
-     This script brings in a dataset of Janaury 2017 and has the electricity data grouped by day. This allows for information on if time component affects the model. This script also includes the features from metadata. It reruns the model to asses if daily instead of total for three years energy usage provides different information on the homes. 
-     
-8. Survey
+There data sources is Data port’s Pecan street. Dataport’s Pecan street database has many features of use for this objective. 
+It can provide information on houses that have Electric vehicles, how much energy they use and many other essential pieces of information. 
+Dataport has another table called electricity_egauage_hours this will provide us with the hourly electricity consumption of the residential 
+households. This will be merged with the data ditionary that provides information on each of the DataID's. 
 
-   This script loads the surveys that the homes in the program could fill out in 2017. Many homes chose not to use the survey. This survey provides more insights into the homes. Here we can see that more than half of the people with EV that filled out the Survey say that they never charge their vehicle at home. This explains why the models are not very accuarte. You can not predict who has EV baed on home electricity use if they do not charge their vehicle at home. 
+This is a classification problem. To start with the data would be collected, cleaned and put together. 
+The next step is the Exploratory Data Analysis. This is used to ensure that the right data is included and to test the data for
+confounding variables, distributions, correlations, and feature importance. The final step is modeling.   
+Models that are useful in classification problems include logistic regression, random forest, decision trees, K-nearest neighbor, 
+support vector machine, and neural networks. All these models can be tested and hyperparameter tuning will be an essential step in model 
+adjustment. The models can be ranked based on accuracy, precision, recall and f1 score to identify the best model. 
