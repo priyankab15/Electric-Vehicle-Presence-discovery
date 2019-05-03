@@ -35,6 +35,6 @@ All of the data is located in the data folder. There are many scripts. Below is 
  
      This script brings in a dataset of Janaury 2017 and has the electricity data grouped by day. This allows for information on if time component affects the model. This script also includes the features from metadata. It reruns the model to asses if daily instead of total for three years energy usage provides different information on the homes. 
      
-8.Survey
+8. Survey
 
    This script loads the surveys that the homes in the program could fill out in 2017. Many homes chose not to use the survey. This survey provides more insights into the homes. Here we can see that more than half of the people with EV that filled out the Survey say that they never charge their vehicle at home. Thisi explains why the models are not very accuarte. You can not predict who has EV baed on home electricity use if they do not charge their vehicle at home. 
