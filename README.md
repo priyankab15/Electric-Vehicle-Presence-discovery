@@ -37,4 +37,4 @@ All of the data is located in the data folder. There are many scripts. Below is 
      
 8. Survey
 
-   This script loads the surveys that the homes in the program could fill out in 2017. Many homes chose not to use the survey. This survey provides more insights into the homes. Here we can see that more than half of the people with EV that filled out the Survey say that they never charge their vehicle at home. Thisi explains why the models are not very accuarte. You can not predict who has EV baed on home electricity use if they do not charge their vehicle at home. 
+   This script loads the surveys that the homes in the program could fill out in 2017. Many homes chose not to use the survey. This survey provides more insights into the homes. Here we can see that more than half of the people with EV that filled out the Survey say that they never charge their vehicle at home. This explains why the models are not very accuarte. You can not predict who has EV baed on home electricity use if they do not charge their vehicle at home. 
